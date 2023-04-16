@@ -27,26 +27,40 @@ class SecondGetStartedScreen extends StatelessWidget {
               "Exercise together with our best\ncommunity fit in the world",
               style: GoogleFonts.poppins(fontSize: 16),
             ),
+            Expanded(child: Container()),
             Container(
-              width: double.infinity,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset('assets/galerry_one.png'),
-                      Image.asset('assets/galerry_two.png'),
+                      Image.asset(
+                        'assets/galerry_one.png',
+                      ),
+                      Gap(height * 12),
+                      Image.asset(
+                        'assets/galerry_two.png',
+                      ),
                     ],
                   ),
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset('assets/galerry_three.png'),
-                      Image.asset('assets/galerry_four.png'),
+                      Image.asset(
+                        'assets/galerry_three.png',
+                      ),
+                      Gap(height * 12),
+                      Image.asset(
+                        'assets/galerry_four.png',
+                      ),
                     ],
                   ),
                 ],
               ),
             ),
-            Container(
+            Expanded(child: Container()),
+            SizedBox(
               width: double.infinity,
               height: height * 55,
               child: ElevatedButton(
@@ -67,9 +81,12 @@ class SecondGetStartedScreen extends StatelessWidget {
             Center(
               child: AutoSizeText(
                 "Terms & Conditions",
-                style: GoogleFonts.poppins(fontSize: 16),
+                style: GoogleFonts.poppins(
+                    fontSize: 16,
+                    decoration: TextDecoration.underline,
+                    color: const Color(0xFF757575)),
               ),
-            )
+            ),
           ],
         ),
       ),

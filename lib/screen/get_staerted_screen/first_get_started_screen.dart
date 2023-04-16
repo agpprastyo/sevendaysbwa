@@ -41,7 +41,7 @@ class FirstGetStartedScreen extends StatelessWidget {
                 ),
                 Gap(height * 50),
                 Container(
-                    width: width * 80,
+                    width: height * 80,
                     height: height * 80,
                     decoration: BoxDecoration(
                         color: Color(0xFF877BFB),

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sevendaysbwa/screen/empty_state_screen/first_empty_state_screen.dart';
 import 'package:sevendaysbwa/screen/get_staerted_screen/first_get_started_screen.dart';
 import 'package:sevendaysbwa/screen/get_staerted_screen/second_get_started_screen.dart';
+import 'package:sevendaysbwa/screen/sign_in_screen/first_sign_in_screen.dart';
+import 'package:sevendaysbwa/screen/sign_in_screen/second_sign_in_screen.dart';
 import 'package:sevendaysbwa/screen/splash_screen/first_splash_screen.dart';
 import 'package:sevendaysbwa/screen/splash_screen/second_splash_screen.dart';
 
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SecondGetStartedScreen(),
+      home: const FirstEmptyStateScreen(),
     );
   }
 }
