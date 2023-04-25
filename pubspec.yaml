@@ -39,7 +39,6 @@ dependencies:
   auto_size_text: ^3.0.0
   gap: ^3.0.0
   flutter_rating_bar: ^4.0.1
-  flutter_emoji_feedback: ^0.1.2
 
 dev_dependencies:
   flutter_test:
