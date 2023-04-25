@@ -3,6 +3,10 @@ import 'package:sevendaysbwa/screen/empty_state_screen/first_empty_state_screen.
 import 'package:sevendaysbwa/screen/empty_state_screen/second_empty_state_screen.dart';
 import 'package:sevendaysbwa/screen/get_staerted_screen/first_get_started_screen.dart';
 import 'package:sevendaysbwa/screen/get_staerted_screen/second_get_started_screen.dart';
+import 'package:sevendaysbwa/screen/pricing_screen/first_pricing_screen.dart';
+import 'package:sevendaysbwa/screen/pricing_screen/second_pricing_screen.dart';
+import 'package:sevendaysbwa/screen/random_screen/first_random_screen.dart';
+import 'package:sevendaysbwa/screen/random_screen/second_random_screen.dart';
 import 'package:sevendaysbwa/screen/rating_screen/first_rating_screen.dart';
 import 'package:sevendaysbwa/screen/rating_screen/second_rating_screen.dart';
 import 'package:sevendaysbwa/screen/sign_in_screen/first_sign_in_screen.dart';
@@ -25,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SecondRatingScreen(),
+      home: const SecondRandomScreen(),
     );
   }
 }
