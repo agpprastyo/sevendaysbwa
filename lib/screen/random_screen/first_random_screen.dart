@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../widgets/cart_list.dart';
+import '../../widgets/drawer_widget.dart';
 
 class FirstRandomScreen extends StatelessWidget {
   const FirstRandomScreen({super.key});
@@ -14,6 +15,7 @@ class FirstRandomScreen extends StatelessWidget {
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
       backgroundColor: const Color(0xffFAFAFA),
+      drawer: const DrawerWidget(),
       body: Padding(
         padding: EdgeInsets.only(
             top: height * 60.0, left: height * 30, right: height * 30),

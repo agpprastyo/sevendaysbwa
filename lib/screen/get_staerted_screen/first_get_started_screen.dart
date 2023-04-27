@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sevendaysbwa/widgets/drawer_widget.dart';
 
 class FirstGetStartedScreen extends StatelessWidget {
   const FirstGetStartedScreen({Key? key}) : super(key: key);
@@ -12,9 +13,10 @@ class FirstGetStartedScreen extends StatelessWidget {
     double height = MediaQuery.of(context).size.height / 812;
 
     return Scaffold(
+      drawer: const DrawerWidget(),
       body: Stack(
         children: [
-          Container(
+          SizedBox(
             width: double.infinity,
             child: Image.asset(
               "assets/background_started.png",
@@ -44,7 +46,7 @@ class FirstGetStartedScreen extends StatelessWidget {
                     width: height * 80,
                     height: height * 80,
                     decoration: BoxDecoration(
-                        color: Color(0xFF877BFB),
+                        color: const Color(0xFF877BFB),
                         borderRadius: BorderRadius.circular(height * 40)),
                     child: IconButton(
                         onPressed: () {},

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class SecondSignInScreen extends StatelessWidget {
   const SecondSignInScreen({Key? key}) : super(key: key);
 
@@ -13,6 +15,7 @@ class SecondSignInScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: const Color(0xFFf8f8f8),
+      drawer: const DrawerWidget(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(left: width * 28, right: width * 28),

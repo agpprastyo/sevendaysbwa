@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sevendaysbwa/widgets/drawer_widget.dart';
 
 class FirstEmptyStateScreen extends StatelessWidget {
   const FirstEmptyStateScreen({Key? key}) : super(key: key);
@@ -11,6 +12,7 @@ class FirstEmptyStateScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width / 375;
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
+      drawer: const DrawerWidget(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

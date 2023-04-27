@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class SecondEmptyStateScreen extends StatelessWidget {
   const SecondEmptyStateScreen({Key? key}) : super(key: key);
 
@@ -12,10 +14,11 @@ class SecondEmptyStateScreen extends StatelessWidget {
     double height = MediaQuery.of(context).size.height / 812;
 
     return Scaffold(
-      backgroundColor: Color(0xFF1B1B33),
+      backgroundColor: const Color(0xFF1B1B33),
+      drawer: const DrawerWidget(),
       body: Column(
         children: [
-          Container(
+          SizedBox(
             width: double.infinity,
             child: Image.asset("assets/chart_illustration.png"),
           ),
@@ -39,7 +42,7 @@ class SecondEmptyStateScreen extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(height * 40),
-                color: Color(0xFF808ee0)),
+                color: const Color(0xFF808ee0)),
             child: IconButton(
               onPressed: () {},
               icon: Icon(

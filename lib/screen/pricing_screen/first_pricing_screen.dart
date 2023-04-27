@@ -2,6 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class FirstPricingScreen extends StatefulWidget {
   const FirstPricingScreen({super.key});
 
@@ -136,6 +138,7 @@ class FirstPricingScreenState extends State<FirstPricingScreen> {
 
     return Scaffold(
       backgroundColor: const Color(0xffFFFFFF),
+      drawer: const DrawerWidget(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(bottom: height * 50.0),

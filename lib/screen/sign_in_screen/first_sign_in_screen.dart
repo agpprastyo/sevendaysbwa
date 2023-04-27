@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class FirstSignInScreen extends StatefulWidget {
   const FirstSignInScreen({Key? key}) : super(key: key);
 
@@ -20,6 +22,7 @@ class _FirstSignInScreenState extends State<FirstSignInScreen> {
 
     return Scaffold(
       backgroundColor: const Color(0xFF181A20),
+      drawer: const DrawerWidget(),
       body: Padding(
         padding: EdgeInsets.only(
             left: width * 40, right: width * 40, top: height * 70),

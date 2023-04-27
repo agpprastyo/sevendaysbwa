@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class SecondGetStartedScreen extends StatelessWidget {
   const SecondGetStartedScreen({Key? key}) : super(key: key);
 
@@ -12,6 +14,7 @@ class SecondGetStartedScreen extends StatelessWidget {
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
       backgroundColor: const Color(0xFFE5E5E5),
+      drawer: const DrawerWidget(),
       body: Padding(
         padding: EdgeInsets.all(height * 40),
         child: Column(
@@ -28,36 +31,34 @@ class SecondGetStartedScreen extends StatelessWidget {
               style: GoogleFonts.poppins(fontSize: 16),
             ),
             Expanded(child: Container()),
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Image.asset(
-                        'assets/galerry_one.png',
-                      ),
-                      Gap(height * 12),
-                      Image.asset(
-                        'assets/galerry_two.png',
-                      ),
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Image.asset(
-                        'assets/galerry_three.png',
-                      ),
-                      Gap(height * 12),
-                      Image.asset(
-                        'assets/galerry_four.png',
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(
+                      'assets/galerry_one.png',
+                    ),
+                    Gap(height * 12),
+                    Image.asset(
+                      'assets/galerry_two.png',
+                    ),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(
+                      'assets/galerry_three.png',
+                    ),
+                    Gap(height * 12),
+                    Image.asset(
+                      'assets/galerry_four.png',
+                    ),
+                  ],
+                ),
+              ],
             ),
             Expanded(child: Container()),
             SizedBox(

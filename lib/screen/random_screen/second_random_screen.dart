@@ -2,6 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class SecondRandomScreen extends StatelessWidget {
   const SecondRandomScreen({super.key});
 
@@ -10,6 +12,7 @@ class SecondRandomScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width / 375;
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
+      drawer: const DrawerWidget(),
       body: Column(
         children: [
           Image.asset(

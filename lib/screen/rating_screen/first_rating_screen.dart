@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../widgets/drawer_widget.dart';
 import '../../widgets/emoji_row.dart';
 
 class FirstRatingScreen extends StatelessWidget {
@@ -14,6 +15,7 @@ class FirstRatingScreen extends StatelessWidget {
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
       backgroundColor: const Color(0xFF181925),
+      drawer: const DrawerWidget(),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: width * 38),
         child: Column(

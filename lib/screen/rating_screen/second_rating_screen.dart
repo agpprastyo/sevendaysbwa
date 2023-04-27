@@ -5,6 +5,8 @@ import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sevendaysbwa/widgets/custom_text_form_field.dart';
 
+import '../../widgets/drawer_widget.dart';
+
 class SecondRatingScreen extends StatelessWidget {
   const SecondRatingScreen({Key? key}) : super(key: key);
 
@@ -13,6 +15,7 @@ class SecondRatingScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width / 375;
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
+      drawer: const DrawerWidget(),
       body: Column(
         children: [
           Center(

@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sevendaysbwa/widgets/drawer_widget.dart';
 
 class SecondPricingScreen extends StatelessWidget {
   const SecondPricingScreen({super.key});
@@ -10,6 +11,7 @@ class SecondPricingScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width / 375;
     double height = MediaQuery.of(context).size.height / 812;
     return Scaffold(
+      drawer: const DrawerWidget(),
       body: Stack(
         children: [
           Container(
@@ -59,28 +61,28 @@ class SecondPricingScreen extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        rowItem(
+                        RowItem(
                           width: width,
                           height: height,
                           text: 'Unlock Our Top Charts',
                         ),
                         SizedBox(height: height * 26),
-                        rowItem(
+                        RowItem(
                             width: width,
                             height: height,
                             text: 'Save More than 1,000 Docs'),
                         SizedBox(height: height * 26),
-                        rowItem(
+                        RowItem(
                             width: width,
                             height: height,
                             text: '24/7 Customer Support'),
                         const SizedBox(height: 26),
-                        rowItem(
+                        RowItem(
                             width: width,
                             height: height,
                             text: 'Track Company’s Spending'),
                         const SizedBox(height: 58),
-                        Container(
+                        SizedBox(
                           width: double.infinity,
                           height: 55,
                           child: TextButton(
@@ -140,8 +142,8 @@ class SecondPricingScreen extends StatelessWidget {
   }
 }
 
-class rowItem extends StatelessWidget {
-  const rowItem(
+class RowItem extends StatelessWidget {
+  const RowItem(
       {super.key,
       required this.width,
       required this.height,
